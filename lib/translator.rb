@@ -5,9 +5,14 @@ def load_library(path)
   # code goes here
   library = YAML.load_file(path)
   
-  get_meaning = library.reduce({}) do |memo, (key, value)|
-     
-  end
+  get_meaning = library.reduce({}) { |memo, (key, value)|
+     memo[value[1]] = key
+  }
+  
+  get_emoticon = library.reduce({}){ |memo, (key, value)|
+    memo[value[0]] = key
+  }
+  
 
 end
 
