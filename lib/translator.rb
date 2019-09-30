@@ -21,7 +21,7 @@ def load_library(path)
   emoticon_dictionary
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(path, )
   # code goes here
 end
 
