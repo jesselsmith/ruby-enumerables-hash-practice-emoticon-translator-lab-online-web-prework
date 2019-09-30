@@ -23,7 +23,11 @@ end
 def get_japanese_emoticon(path, emoticon)
   emoticon_dictionary = load_library(path)
   
-  emoticon_dictionary[:get_emoticon][emoticon]
+  if emoticon_dictionary[:get_emoticon].has_key? emoticon
+    emoticon_dictionary[:get_emoticon][emoticon]
+  else
+    "Sorry, that is not a known emoticon"
+  end
 end
 
 def get_english_meaning
