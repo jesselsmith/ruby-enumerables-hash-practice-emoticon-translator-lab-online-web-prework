@@ -26,7 +26,7 @@ def get_japanese_emoticon(path, emoticon)
   if emoticon_dictionary[:get_emoticon].has_key? emoticon
     emoticon_dictionary[:get_emoticon][emoticon]
   else
-    "Sorry, that is not a known emoticon"
+    "Sorry, that emoticon was not found"
   end
 end
 
