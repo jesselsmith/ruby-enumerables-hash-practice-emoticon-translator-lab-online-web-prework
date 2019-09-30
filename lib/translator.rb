@@ -5,8 +5,8 @@ def load_library(path)
   # code goes here
   library = YAML.load_file(path)
   
-  library.reduce({}) do |memo, (key, value)|
-    
+  get_meaning = library.reduce({}) do |memo, (key, value)|
+     
   end
 
 end
