@@ -4,6 +4,11 @@ require "yaml"
 def load_library(path)
   # code goes here
   library = YAML.load_file(path)
+  
+  library.reduce({}) do |memo, (key, value)|
+    
+  end
+
 end
 
 def get_japanese_emoticon
